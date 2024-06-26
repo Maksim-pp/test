@@ -1,0 +1,145 @@
+.block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 743px;
+    height: 91px;
+    border-radius: 10px;
+    background-color: #3579F5;
+    color: #FFFFFF;
+}
+
+/* 
+svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 1;
+    stroke: #FFFFFF80;
+    transform: translate(5px, 5px);
+}
+
+.circle-2{
+    stroke: #FFFFFF;
+    stroke-width: 2;
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+}  */
+
+.progress-bar {
+    position: absolute;
+    left: 22px;
+    top: 16px;
+    padding: 16px;
+    border-radius: 50%;
+    background:
+        radial-gradient(closest-side, #3579F5 95% , transparent  100%),
+        conic-gradient(#FFFFFF 5%, #FFFFFF80 0);
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    font-size: 20px;
+    }
+
+.progress-bar::before {
+    content: "0/7";
+}
+
+/*
+.progressLine {
+    position: absolute;
+    width: 20px;
+    left: 22px;
+    top: 16px;
+    padding: 12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+} 
+ .progress{
+    position: absolute;
+    top: 16px;
+    left: 22px;
+    padding: 12px;
+    width: 32px;
+    height: 32px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}  */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.info__head {
+    position: absolute;
+    top: 12px;
+    left: 98px;
+    padding: 0px 10px 0px 10px;
+    gap: 10px;
+    border-radius: 40px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    background: #2364DB;
+}
+
+.info__check {
+    position: absolute;
+    width: 211px;
+    height: 20px;
+    top: 34px;
+    left: 98px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+
+}
+
+.info__text {
+    position: absolute;
+    width: 389px;
+    height: 18px;
+    top: 58px;
+    left: 98px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+}
+
+.button {
+    position: absolute;
+    left: 555px;
+    width: 170px;
+    height: 40px;
+    padding: 10px 32px;
+    gap: 10px;
+    border-radius: 6px;
+    opacity: 0px;
+    border: none;
+    background: #F4F8FF;
+    color: #4777ED;
+}
+
+.button:hover {
+    cursor: pointer;
+}
